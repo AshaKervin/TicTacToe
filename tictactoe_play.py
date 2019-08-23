@@ -3,17 +3,18 @@ import functions
 print("Welcome to Tic Tac Toe!")
 print("Here's the current board:")
 
-functions.gameBoard()
+
+functions.displayBoard()
 
 isPlaying = True
 while(isPlaying==True):
-    functions.play("player1")
+
+    functions.play("Player1")
     print("Move accepted, here's the current board: ")
-    isPlaying = functions.winner();
-    functions.gameBoard()
-    functions.play("player2")
+    isPlaying = functions.findWinner();
+    functions.displayBoard()
+    functions.play("Player2")
     print("Move accepted, here's the current board: ")
-    isPlaying = functions.winner();
-    functions.gameBoard()
+    isPlaying = functions.findWinner();
+    functions.displayBoard()
    
-    
